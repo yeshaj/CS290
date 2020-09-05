@@ -1,0 +1,47 @@
+tr.even {
+  background-color: #98FB98;
+}
+tr.odd {
+  background-color: #ADD8E6;
+}
+td.pink {
+  color: #FF69B4;
+}
+td.blue {
+  color: #0000FF;
+}
+table {
+  padding: 12px;
+  border: 2px solid #000000;
+
+}
+
+#outer-content {
+width: 75%;
+padding: 10px;
+background: #FFB6C1;
+position: absolute;
+}
+
+#inner-content {
+background: #0EBFE9;
+width: 50%;
+position: relative;
+margin: 0 auto;
+float: center;
+text-align: center;
+}
+
+fieldset {
+  width: 300;
+  border: 6px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+legend {
+  border-radius: 3px;
+  padding: 50px 20px;
+  text-align: left;
+}
