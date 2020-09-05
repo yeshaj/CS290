@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>India's Beautiful Monuments</title>
+        
+        <link rel="stylesheet" href="ProjectStyle.css">
+	</head>
+	
+	<body>
+        
+        <div id="Menu Buttons">
+            <!-- Menu Buttons -->
+            <button class="tabLinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'IntTravel')">International Travel</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'Websites')">Travel Websites</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'Comments')">Comments and Requests</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+        </div>
+        
+        
+        <!-- Home Page -->
+        <div id="Home" class="tabContent">
+        
+            <h1>India's Beautiful Monuments</h1>
+            <p>"[India is] the One land that all men desire to see, and having seen once, by even a glimpse, would not give that glimpse for all the shows of all the rest of the globe combined."</p><p class="tabOver">-Mark Twain</p>
+        
+            <!-- Photo Carousel -->
+            <!-- 
+            Used tutorial from: https://www.youtube.com/watch?v=aN7WnodpP4Q&t=4s 
+            
+            -->
+            <div class=photoCarousel>
+                <div class=slideContainer>
+                <div class=leftArrow onclick="nextSlide(-1)"><span class="arrow arrowLeft"></span></div>
+                <div class=rightArrow onclick="nextSlide(1)"><span class="arrow arrowRight"></span></div>
+                
+                <div class=imageHolder> 
+                    <img src="images/agrafort.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/akbarstomb.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/akshardham.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/bagh.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/goldentemple.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/indiagate.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/qutub.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/tajmahal.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="images/wagah.jpg" alt="Photo Load Error">
+                </div>
+                   
+            </div>
+            </div>
+            
+        </div>
+
+        
+        <!-- Int Travel Page -->
+        <div id="IntTravel" class="tabContent" style="display:none">
+            
+            <h1>International Travel</h1>
+         
+            <!-- Photos -->
+            <div class = "photoContainer">
+                <a href="Agra.html">
+                <h4>Agra, Uttar Pradesh</h4>
+                    <img class="fit" src="images/tajmahal.jpg" alt="Taj Mahal">
+                    <img class="fit" src="images/agrafort.jpg" alt="Agra Fort">
+                    <img class="fit" src="images/akbarstomb.jpg" alt="Tomb of Akbar the Great">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">
+                <a href="Delhi.html">
+                <h4>New Delhi, NCT Delhi</h4>
+                    <img class="fit" src="images/indiagate.jpg" alt="India Gate">
+                    <img class="fit" src="images/qutub.jpg" alt="Qutab Minar">
+                    <img class="fit" src="images/akshardham.jpg" alt="Akshardham Temple">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="Amritsar.html">
+                <h4>Amritsar, Punjab</h4>
+                    <img class="fit" src="images/goldentemple.jpg" alt="Golden Temple">
+                    <img class="fit" src="images/wagah.jpg" alt="Wagah Border">
+                    <img class="fit" src="images/bagh.jpg" alt="Jallianwala Bagh">       
+            </div><hr>
+            
+            <ul>Indian Heritage Map
+            
+                <li><a class = "dLoadButton" href="images/heritage_1.png" download>Download Map</a> </li>
+                </ul>
+
+        </div>
+        
+        <!-- Different Websites for Travel -->
+        <div id="Websites" class="tabContent" style="display:none">
+        
+        <h1>Travel Websites</h1>
+            
+            <ul>Tourism websites<hr>
+                <a href="https://www.incredibleindia.org/content/incredible-india-v2/en.html"><li>Incredible India </li></a><br>
+                <a href="http://tourism.gov.in/"><li>Ministry of Tourism</li></a><br>
+                <a href="https://www.iato.in/index.php"><li>Indian Association of Tour Operators</li></a><br>
+                <a href="https://www.the-maharajas.com/"><li>The Maharajas</li></a><br>
+                <a href="https://www.yatra.com/"><li>Yatra</li></a><br>
+                <a href="https://www.indiatouristoffice.org/"><li>India Tourist Office</li></a><br>
+                <a href="https://irctc.com/"><li>Indian Railway Catering And Tourism Corporation Limited</li></a><br>
+                <a href="https://www.wowclub.com/"><li>Women on Wanderlust (WOW) Club</li></a><br>
+                <a href="https://traveltriangle.com/"><li>Travel Triangle</li></a><br>              
+            </ul>
+            
+        </div>
+        
+        
+        <!-- Comments Page -->
+        <div id="Comments" class="tabContent" style="display:none">
+        
+        <h1>Comments and Requests</h1>
+            
+            <p>Please use this form to give any feedback and request other places you'd like to see on here:</p>
+            
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+            
+                Monument/Site you'd like to see:<br>
+                <input type="text" name="destination" value=""><br><br>
+            
+                Location (where it is located):<br>
+                <input type="text" name="location" value=""><br><br>
+  
+                <input type="submit" value="Submit">
+            </form>
+    
+        </div>
+        
+        
+        <!-- About Me Page -->
+        <div id="AboutMe" class="tabContent" style="display:none">
+        
+        <h1>About Me</h1>        
+            <div class =scrollBox>
+    
+                <p> Hello! My name is Yesha Jhala. I have lived in the Portland, Oregon area for almost 19 1/2 years, and
+                    identify as an Indian American. As a PDX girl, I've learned to love the nature and city life all the same. 
+                    Growing up, I've loved going on hikes, skiing down Mount Hood, exploring Downtown, and spending sunny (yet
+                    also windy) days at the beach. I've also traveled to different places in the US, and love seeing what each
+                    state has to offer, especially the different foods. I make sure I get the most out of each place I go, even
+                    though I'm a vegetarian and sometimes it's a little hard to do that. <br><br>   
+                    
+                    Growing up, I traveled to India many times. While my home was in the western
+                    parts of India, I've traveled to many different parts of India and usually try to go to at least one new 
+                    state every time I'm there. Some places include Uttar Pradesh, NCT Delhi, Punjab, Maharashtra, Goa, Chennai,
+                    and Kerala. Traveling can get super tiring sometimes, but the memories I have with my family at each place
+                    has made it completely worth it each time. My favorite memory is probably from 2018 when I went to Kerala
+                    and got to ride on an elephant. Let me just say though, if you ever plan on doing that, make sure you stretch
+                    your legs beforehand. <br><br>
+
+                    Currently, I'm a third year student at Oregon State University. I am studying towards a Computer Science degree.
+                    I always knew that I'd end up into Computer Science in the future because of the classes I had taken and the projects
+                    I had done in the past years. My first project was creating a computer game with some friends in 6th grade and 
+                    I made an iOS game by myself. Since then, I knew that there was a lot that this program could offer and it'd be a ton 
+                    of fun to see where it takes me. <br> <br>
+
+                    In my free time, I love to dance. My favorite place to perform is at Pioneer Square in downtown Portland. Every year, 
+                    there's an Indian Independence Day celebration there, where people can perform in front of thousands of people. While 
+                    it's absolutely terrifying, performing in the open air and seeing people enjoy your performance is just a different 
+                    type of happiness for one. Along with the amazing acts, the food is amazing and the people are all extremely nice. <br><br>
+
+                    Other than dancing, I love hanging out with my friends and family, watching a ton of movies, and going on walks/runs, 
+                    especially while listening to some high energy music. I'm also in the Indian Student Association as the current Co-President 
+                    which keeps me busy pretty often. I also am an Ambassador for Society of Women Engineers and a member of ACM-W. 
+
+
+
+                </p>
+            
+            </div><br>
+            
+            <img class="fitLarge" src="images/yesha.JPG" alt="I'm Yesha">
+            <p>Munnar, Kerala, India</p>
+    
+        </div>
+        
+        
+        <!-- Javascript Source -->
+        <script src="ProjectScript.js"></script>
+        
+        
+	</body>
+
+</html>
